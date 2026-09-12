@@ -38,7 +38,7 @@ function App() {
       setIsDialogOpen(false);
       return { success: true };
     } catch (err) {
-      console.error('Error creating task:', err);
+      console.error('Error of creating task:', err);
       return {
         success: false,
         error: err.message || 'Failed to create task',
