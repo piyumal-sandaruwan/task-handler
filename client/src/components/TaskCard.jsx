@@ -2,7 +2,8 @@
 
 import { useState } from "react";
 import { formatDate } from "../utils/dateUtils";
-
+let age = 25;
+let name = "sss";
 const TaskCard = ({ task, onDelete }) => {
   const [isDeleting, setIsDeleting] = useState(false);
 
@@ -30,6 +31,7 @@ const TaskCard = ({ task, onDelete }) => {
             {task.description}
           </p>
           <div className="flex items-center text-sm text-gray-500">
+
             <svg
               className="w-4 h-4 mr-1"
               fill="none"
@@ -60,6 +62,7 @@ const TaskCard = ({ task, onDelete }) => {
               stroke="currentColor"
               viewBox="0 0 24 24"
             >
+             
               <path
                 strokeLinecap="round"
                 strokeLinejoin="round"
