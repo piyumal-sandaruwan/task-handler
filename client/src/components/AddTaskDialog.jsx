@@ -46,7 +46,7 @@ const AddTaskDialog = ({ onClose, onSubmit }) => {
     } catch (err) {
       console.log(err);
 
-      setError('An unexpected error occurred');
+      setError('An unexpected error occured');
     } finally {
       setIsSubmitting(false);
     }
@@ -117,7 +117,7 @@ const AddTaskDialog = ({ onClose, onSubmit }) => {
               name="description"
               value={formData.description}
               onChange={handleChange}
-              placeholder="Enter task description..."
+              placeholder="Enter the task description..."
               rows={4}
               maxLength={500}
               className="w-full px-3 py-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors duration-200 resize-none"
