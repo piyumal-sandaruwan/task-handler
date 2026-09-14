@@ -2,8 +2,6 @@
 
 import { useState } from "react";
 import { formatDate } from "../utils/dateUtils";
-let age = 25;
-let name = "sss";
 const TaskCard = ({ task, onDelete }) => {
   const [isDeleting, setIsDeleting] = useState(false);
 
